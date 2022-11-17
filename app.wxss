@@ -1,0 +1,200 @@
+/**app.wxss     版本.20210517**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+/* 按钮 */
+.customized {
+  border-radius: 10rpx;
+  border: 1px solid #333;
+  width: 500rpx;
+  padding: 20rpx 0;
+  margin: 0 auto;
+  color: #333;
+  text-align: center;
+}
+
+/* 布局中心 */
+.itemFlex {
+  display: flex;
+  align-items: center;
+}
+
+.itemCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemAround {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.itemBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.itemEvenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* search */
+.search {
+  display: flex;
+  align-items: center;
+  width: 690rpx;
+  margin: 0 auto;
+  height: 65rpx;
+  border-radius: 50rpx;
+  background-color: #f2f2f2;
+  font-size: 25rpx;
+}
+
+/* search 图标 */
+.searchIcon {
+  padding: 0 20rpx;
+  width: 28rpx;
+  height: 28rpx;
+}
+
+/* search 输入框 */
+.search input {
+  width: 530rpx;
+  padding-left: 40rpx;
+}
+
+/* 按钮 */
+.customized {
+  border-radius: 10rpx;
+  border: 1px solid #333;
+  width: 500rpx;
+  padding: 20rpx 0;
+  margin: 0 auto;
+  color: #333;
+  text-align: center;
+}
+
+/* 行左右内容分布  一般输入手机号 姓名这种 */
+.line {
+  width: 660rpx;
+  margin: 0 auto;
+  padding: 20rpx 20rpx;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 28rpx;
+}
+
+/* 文本超长变点   自行加宽度*/
+.textLong {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* 箭头 */
+.right {
+  width: 25rpx;
+  height: 25rpx;
+  margin: 0 20rpx;
+}
+
+/* 标题 */
+.title {
+  font-weight: 500;
+  font-size: 34rpx;
+  margin-left: 25rpx;
+}
+
+.title_minus {
+  font-size: 28rpx;
+  margin-left: 45rpx;
+  margin-top: 20rpx;
+}
+
+.small_title {
+  color: #00c28a;
+  font-size: 26rpx;
+  margin-left: 20rpx;
+}
+
+/* 自定义导航栏 */
+.navigationStyle {
+  margin-top: 100rpx;
+  margin-bottom: 40rpx;
+}
+
+.navigationStyle>image:first-child {
+  width: 70rpx;
+  margin: 0 230rpx 0 40rpx;
+}
+
+.navigationStyle>image:last-child {
+  width: 70rpx;
+}
+
+/* 查看更多  */
+.more {
+  font-size: 26rpx;
+  color: #00c28a;
+}
+
+/* 空白页提示  单行*/
+.vacantTips {
+  text-align: center;
+  color: #787878;
+  font-size: 29rpx;
+  margin-top: 40rpx;
+}
+
+.headimg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+  margin-right: 20rpx;
+}
+/* lovers */
+.lovers_layout{
+  margin: 0 auto;
+  padding: 20rpx 0 ;
+  width: calc(100% - 50rpx);
+  text-align: center;
+}
+
+.lovers_headImg{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+}
+.lovers_name{
+  text-align: center;
+  color: #fff;
+  font-size: 26rpx;
+}
+
+/*  */
+.custom_head_left {
+  padding:180rpx 0 0  40rpx;
+  color: #fff;
+}
+
+
+/*  */
+.background {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #e87382, #e873839f, #e8738288);
+}
