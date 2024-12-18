@@ -6,7 +6,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "图片管理",
+    "navigationBarTitleText": "亲友信息管理",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",

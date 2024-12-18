@@ -7,15 +7,17 @@ export const store = observable({
   numB: 20,
   //End: Demo data
   imageMetaList: [
-    {
-      "id": "1",
-      "imageUrl": "http://xl.tianjiaoedu.org/upload/201607/05/201607051554541730.jpg",
-      "name": "南昌校区图书馆",
-      "fileHash": ""
-    }
+    // {
+    //   "id": "1",
+    //   "imageUrl": "",
+    //   "name": "南昌校区图书馆",
+    //   "fileHash": ""
+    // }
   ],
-  groupId: "",
-  groupToken: "",
+  groupId: "fangzhengGroup",
+  groupToken: "UUSBFDLIBZGKUCLRZZQY",
+//   groupId: "",
+//   groupToken: "",
 
   updateLoginInfo: action(function(groupId, groupToken){
     this.groupId = groupId
@@ -23,7 +25,22 @@ export const store = observable({
   }),
 
   updateImageMetaList: action(function (newList) {
-    this.imageMetaList = newList
+    let transferedList = []
+    let i = 0    
+    for (; i < newList.length; i++) {
+      let image = newList[i]
+      transferedList.push(
+        {
+            "id": image.id,
+          "name": image.name,
+          "imageUrl": "https://5oq7407038.goho.co:443/api/serial" + "/image/download?fileHash=" + image.fileHash,
+        //   "imageUrl": "http://127.0.0.1:9090/api/serial" + "/image/download?fileHash=" + image.fileHash,
+          "fileHash": image.fileHash
+        }
+      )
+    }
+    console.log(transferedList)
+    this.imageMetaList = transferedList
   }),
 
 

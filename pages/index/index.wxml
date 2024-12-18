@@ -3,7 +3,8 @@
 <block wx:if="{{imageMetaList.length != 0 }}">
   <view class="itemFlex" style="flex-wrap:wrap;">
     <view wx:for="{{imageMetaList}}" wx:key="*this">
-      <image class="{{is_show_normal?'small_pic':'pic'}}" mode="aspectFill" src="{{item.imageUrl}}" data-idx="{{index}}" bindtap="preview" bindlongtap="img_action"></image>
+      <image class="{{is_show_normal?'small_pic':'pic'}}" mode="aspectFill" 
+      src="{{item.imageUrl}}" data-idx="{{index}}" bindtap="preview" bindlongtap="img_action"></image>
       <view style="text-align: center;">{{item.name}}</view>
     </view>
   </view>
@@ -13,13 +14,14 @@
   <view class="vacantTips">暂无内容～</view>
 </block>
 
-<view bindtap="open" class="customized but">上传图片</view>
+<view bindtap="open" class="customized but">上传亲友信息</view>
 
 <!--	 蒙层  -->
 <mask wx:if="{{mask}}" bindtap="close">
     <view class="submask" catchtap="open">
     <view class="line itemBetween" bindtap="chooseImage">
-      <view>图片（点击上传）</view>
+      <view wx:if="{{!update}}">图片（点击上传）</view>
+      <view wx:if="{{update}}">图片（更新）</view>
       <view class="itemFlex">
         <image class="mask_headimg" mode="aspectFit" src="{{tmp_img?tmp_img:'/img/pic.png'}}" />
       </view>

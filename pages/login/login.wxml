@@ -1,7 +1,7 @@
 <!--pages/login/login.wxml-->
 <view class="base">
   <view class='form'>
-    <view class='title' style='position:absolute;bottom:1110rpx;'>图片管理</view>
+    <view class='title' style='position:absolute;bottom:1110rpx;'>亲友信息管理</view>
     <view class='form-1'>
       <form bindsubmit="formSubmit">
         <input type="text" class="z-f7-in2" placeholder="账号" name="username" id="in4" style='position:absolute;bottom:930rpx;' />

@@ -63,8 +63,10 @@ App({
   onShow() {},
   globalData: {
     is_ios: wx.getSystemInfoSync().system.startsWith('iOS'),
-    url_namespace: 'http://192.168.0.102:9090/api/serial/',
-    url_domainname: 'http://192.168.0.102:9090/',
+    url_namespace: 'https://5oq7407038.goho.co:443/api/serial/',
+    url_domainname: 'https://5oq7407038.goho.co:443/',
+    // url_namespace: 'http://127.0.0.1:9090/api/serial/',
+    // url_domainname: 'http://127.0.0.1:9090/',
     login_code: '',
     userInfo: null,
     clear: false
